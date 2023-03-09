@@ -1,4 +1,4 @@
-from typing import Union
+import fastapi
 
 from fastapi import FastAPI
 
@@ -6,5 +6,5 @@ app = FastAPI()
 
 
 @app.get("/")
-def read_root():
-    return {"Hello": "World"}
+async def root():
+    return {"message": "Hello World"}
