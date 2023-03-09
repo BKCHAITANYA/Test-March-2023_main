@@ -24,8 +24,7 @@ jobs:
 
       - name: Run Super-Linter
         uses: github/super-linter@v4
-      - name: Lint with flake8
-        run: pip install flake8
+
         env:
           #VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: "main"
